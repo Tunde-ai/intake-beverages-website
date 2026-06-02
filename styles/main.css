@@ -186,7 +186,20 @@ ul {
   transition: transform var(--transition-base), opacity var(--transition-base);
 }
 
-/* ── Hero — DSGN-05 ─────────────────────────────────────────── */
+/* Hamburger open state — X animation */
+.header__hamburger--open .header__hamburger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.header__hamburger--open .header__hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.header__hamburger--open .header__hamburger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Hero — HERO-01 through HERO-05, DSGN-05 ────────────────── */
 
 .hero {
   position: relative;
@@ -195,6 +208,15 @@ ul {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .hero__overlay {

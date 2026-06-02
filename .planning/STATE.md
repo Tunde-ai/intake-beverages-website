@@ -5,21 +5,21 @@
 See: .planning/PROJECT.md (updated 2026-06-02)
 
 **Core value:** Communicate InTake's premium luxury identity — every section must feel high-end, cinematic, and intentional
-**Current focus:** Phase 3 — Navigation & Hero
+**Current focus:** Phase 4 — Brand Story Sections
 
 ## Current Position
 
-Phase: 3 of 6 (Navigation & Hero)
+Phase: 4 of 6 (Brand Story Sections)
 Plan: 0 of TBD in current phase
 Status: Ready to plan
-Last activity: 2026-06-02 — Phase 2 completed (Assets)
+Last activity: 2026-06-02 — Phase 3 completed (Navigation & Hero)
 
-Progress: [██░░░░░░░░] 33%
+Progress: [█████░░░░░] 50%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
+- Total plans completed: 3
 - Average duration: —
 - Total execution time: —
 
@@ -29,9 +29,10 @@ Progress: [██░░░░░░░░] 33%
 |-------|-------|-------|----------|
 | 1. Foundation & Design System | 1 | — | — |
 | 2. Assets | 1 | — | — |
+| 3. Navigation & Hero | 1 | — | — |
 
 **Recent Trend:**
-- Last 5 plans: Phase 1, Phase 2 complete
+- Last 5 plans: Phase 1, Phase 2, Phase 3 complete
 - Trend: —
 
 *Updated after each plan completion*
@@ -50,6 +51,8 @@ Recent decisions affecting current work:
 - clamp() for responsive typography instead of fixed breakpoint overrides
 - Waterfall hero video is 5.1MB — within target, no compression needed
 - Poster image extracted from video at 2s mark for fallback
+- Inline SVGs for social icons (Facebook, X/Twitter, YouTube) — no icon library dependency
+- IIFE pattern for main.js — no global pollution
 
 ### Asset Inventory
 
@@ -83,5 +86,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-06-02
-Stopped at: Phase 2 complete — ready to plan Phase 3 (Navigation & Hero)
+Stopped at: Phase 3 complete — ready to plan Phase 4 (Brand Story Sections)
 Resume file: None
