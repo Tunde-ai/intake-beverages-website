@@ -5,21 +5,21 @@
 See: .planning/PROJECT.md (updated 2026-06-02)
 
 **Core value:** Communicate InTake's premium luxury identity — every section must feel high-end, cinematic, and intentional
-**Current focus:** Phase 4 — Brand Story Sections
+**Current focus:** Phase 5 — Products, Testimonials & Ingredients
 
 ## Current Position
 
-Phase: 4 of 6 (Brand Story Sections)
+Phase: 5 of 6 (Products, Testimonials & Ingredients)
 Plan: 0 of TBD in current phase
 Status: Ready to plan
-Last activity: 2026-06-02 — Phase 3 completed (Navigation & Hero)
+Last activity: 2026-06-02 — Phase 4 completed (Brand Story Sections)
 
-Progress: [█████░░░░░] 50%
+Progress: [██████░░░░] 66%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
+- Total plans completed: 4
 - Average duration: —
 - Total execution time: —
 
@@ -30,9 +30,10 @@ Progress: [█████░░░░░] 50%
 | 1. Foundation & Design System | 1 | — | — |
 | 2. Assets | 1 | — | — |
 | 3. Navigation & Hero | 1 | — | — |
+| 4. Brand Story Sections | 1 | — | — |
 
 **Recent Trend:**
-- Last 5 plans: Phase 1, Phase 2, Phase 3 complete
+- Last 5 plans: Phase 1–4 complete
 - Trend: —
 
 *Updated after each plan completion*
@@ -41,29 +42,16 @@ Progress: [█████░░░░░] 50%
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
 - Static HTML/CSS/JS over React/Next.js — no dynamic content needed, framework adds overhead
 - Formspree for contact and newsletter forms — no backend required
 - Assets pulled from live site via WP REST API at demowebsitedevelopmentnew.com/intakebeverages/
 - BEM naming convention for CSS components (documented in index.html comment block)
 - clamp() for responsive typography instead of fixed breakpoint overrides
 - Waterfall hero video is 5.1MB — within target, no compression needed
-- Poster image extracted from video at 2s mark for fallback
-- Inline SVGs for social icons (Facebook, X/Twitter, YouTube) — no icon library dependency
+- Inline SVGs for social icons — no icon library dependency
 - IIFE pattern for main.js — no global pollution
-
-### Asset Inventory
-
-- **Video**: waterfall-hero.mp4 (5.1MB), water-splash.mp4 (1.1MB), grok-video.mp4 (2.5MB) + poster frame
-- **Logos**: 5 variants (luxury-glass, energy-glass, r30, r31, r32)
-- **Products**: 6 product images (4 can renders, 2 glass plates)
-- **Campaign**: 4 Paris/Eiffel tower images
-- **Testimonials**: 3 AI-generated portrait images
-- **Textures**: 4 water texture backgrounds
-- **General**: banners, 360 can, product renders, misc (15 files)
-- **Total**: 40 files, ~25MB
+- Campaign copy sourced from WP REST API /pages/799 (InTake Paris page)
+- Marquee uses CSS-only infinite scroll (duplicated span trick, translateX -50%)
 
 ### Pending Todos
 
@@ -86,5 +74,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-06-02
-Stopped at: Phase 3 complete — ready to plan Phase 4 (Brand Story Sections)
+Stopped at: Phase 4 complete — ready to plan Phase 5 (Products, Testimonials & Ingredients)
 Resume file: None
