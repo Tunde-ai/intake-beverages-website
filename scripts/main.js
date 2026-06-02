@@ -47,4 +47,53 @@
       target.scrollIntoView({ behavior: 'smooth' });
     });
   });
+
+  /* ── Testimonials Carousel — TEST-04 ───────────────────────── */
+
+  var slides = document.querySelectorAll('.testimonials__slide');
+  var dots = document.querySelectorAll('.testimonials__dot');
+  var prevBtn = document.querySelector('.testimonials__btn--prev');
+  var nextBtn = document.querySelector('.testimonials__btn--next');
+  var currentSlide = 0;
+  var autoRotateTimer;
+
+  function goToSlide(index) {
+    slides[currentSlide].classList.remove('testimonials__slide--active');
+    dots[currentSlide].classList.remove('testimonials__dot--active');
+    currentSlide = (index + slides.length) % slides.length;
+    slides[currentSlide].classList.add('testimonials__slide--active');
+    dots[currentSlide].classList.add('testimonials__dot--active');
+  }
+
+  function startAutoRotate() {
+    autoRotateTimer = setInterval(function () {
+      goToSlide(currentSlide + 1);
+    }, 5000);
+  }
+
+  function resetAutoRotate() {
+    clearInterval(autoRotateTimer);
+    startAutoRotate();
+  }
+
+  if (prevBtn && nextBtn && slides.length > 0) {
+    prevBtn.addEventListener('click', function () {
+      goToSlide(currentSlide - 1);
+      resetAutoRotate();
+    });
+
+    nextBtn.addEventListener('click', function () {
+      goToSlide(currentSlide + 1);
+      resetAutoRotate();
+    });
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener('click', function () {
+        goToSlide(i);
+        resetAutoRotate();
+      });
+    });
+
+    startAutoRotate();
+  }
 })();

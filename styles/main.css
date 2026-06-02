@@ -580,6 +580,273 @@ section {
   margin-top: var(--space-xs);
 }
 
+/* ── Products — PROD-01 through PROD-04 ──────────────────────── */
+
+.products {
+  background-color: var(--color-bg);
+}
+
+.products__label {
+  font-size: var(--font-size-small);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-bottom: var(--space-xs);
+}
+
+.products__heading {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.products__card {
+  background: rgba(0, 188, 212, 0.05);
+  border: 1px solid rgba(0, 188, 212, 0.1);
+  padding: var(--space-md);
+  text-align: center;
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.products__card:hover {
+  border-color: rgba(0, 188, 212, 0.3);
+  transform: translateY(-4px);
+}
+
+.products__card-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-sm);
+}
+
+.products__card-image img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.products__card-name {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  margin-bottom: var(--space-xs);
+}
+
+.products__card-price {
+  font-size: var(--font-size-body);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-sm);
+}
+
+.products__card-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.products__card-btn:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+/* ── Testimonials — TEST-01 through TEST-05 ──────────────────── */
+
+.testimonials {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.testimonials__label {
+  font-size: var(--font-size-small);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-bottom: var(--space-xs);
+}
+
+.testimonials__heading {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.testimonials__carousel {
+  max-width: 700px;
+  margin-inline: auto;
+  position: relative;
+}
+
+.testimonials__track {
+  position: relative;
+  min-height: 280px;
+}
+
+.testimonials__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonials__slide--active {
+  opacity: 1;
+  position: relative;
+}
+
+.testimonials__quote {
+  font-size: var(--font-size-body);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.9;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: var(--space-md);
+}
+
+.testimonials__author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.testimonials__photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-primary);
+}
+
+.testimonials__name {
+  display: block;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+}
+
+.testimonials__title {
+  display: block;
+  font-size: var(--font-size-small);
+  color: var(--color-primary);
+}
+
+.testimonials__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.testimonials__btn {
+  background: transparent;
+  border: 1px solid rgba(0, 188, 212, 0.3);
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials__btn:hover {
+  background: rgba(0, 188, 212, 0.1);
+  border-color: var(--color-primary);
+}
+
+.testimonials__dots {
+  display: flex;
+  gap: 8px;
+}
+
+.testimonials__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 188, 212, 0.3);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.testimonials__dot--active {
+  background: var(--color-primary);
+}
+
+/* ── Ingredients — INGR-01 through INGR-03 ───────────────────── */
+
+.ingredients {
+  background-color: var(--color-bg);
+}
+
+.ingredients__heading {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.ingredients__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  text-align: center;
+}
+
+.ingredients__card {
+  background: rgba(0, 188, 212, 0.06);
+  border: 1px solid rgba(0, 188, 212, 0.12);
+  padding: var(--space-lg) var(--space-md);
+  transition: border-color var(--transition-base);
+}
+
+.ingredients__card:hover {
+  border-color: rgba(0, 188, 212, 0.3);
+}
+
+.ingredients__percent {
+  display: block;
+  font-size: var(--font-size-hero);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  line-height: 1.2;
+  margin-bottom: var(--space-xs);
+}
+
+.ingredients__name {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+  color: rgba(255, 255, 255, 0.8);
+}
+
 /* ── Utility ────────────────────────────────────────────────── */
 
 .text-accent {
@@ -651,6 +918,14 @@ section {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-lg);
   }
+
+  .products__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ingredients__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Mobile — 320px */
@@ -673,6 +948,14 @@ section {
 
   .statistics__grid {
     grid-template-columns: 1fr;
+  }
+
+  .products__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ingredients__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
