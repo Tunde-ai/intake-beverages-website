@@ -5,21 +5,21 @@
 See: .planning/PROJECT.md (updated 2026-06-02)
 
 **Core value:** Communicate InTake's premium luxury identity — every section must feel high-end, cinematic, and intentional
-**Current focus:** Phase 2 — Assets
+**Current focus:** Phase 3 — Navigation & Hero
 
 ## Current Position
 
-Phase: 2 of 6 (Assets)
+Phase: 3 of 6 (Navigation & Hero)
 Plan: 0 of TBD in current phase
 Status: Ready to plan
-Last activity: 2026-06-02 — Phase 1 completed (Foundation & Design System)
+Last activity: 2026-06-02 — Phase 2 completed (Assets)
 
-Progress: [█░░░░░░░░░] 16%
+Progress: [██░░░░░░░░] 33%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
+- Total plans completed: 2
 - Average duration: —
 - Total execution time: —
 
@@ -28,9 +28,10 @@ Progress: [█░░░░░░░░░] 16%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1. Foundation & Design System | 1 | — | — |
+| 2. Assets | 1 | — | — |
 
 **Recent Trend:**
-- Last 5 plans: Phase 1 complete
+- Last 5 plans: Phase 1, Phase 2 complete
 - Trend: —
 
 *Updated after each plan completion*
@@ -44,9 +45,22 @@ Recent decisions affecting current work:
 
 - Static HTML/CSS/JS over React/Next.js — no dynamic content needed, framework adds overhead
 - Formspree for contact and newsletter forms — no backend required
-- Assets pulled from live site at demowebsitedevelopmentnew.com/intakebeverages/
+- Assets pulled from live site via WP REST API at demowebsitedevelopmentnew.com/intakebeverages/
 - BEM naming convention for CSS components (documented in index.html comment block)
 - clamp() for responsive typography instead of fixed breakpoint overrides
+- Waterfall hero video is 5.1MB — within target, no compression needed
+- Poster image extracted from video at 2s mark for fallback
+
+### Asset Inventory
+
+- **Video**: waterfall-hero.mp4 (5.1MB), water-splash.mp4 (1.1MB), grok-video.mp4 (2.5MB) + poster frame
+- **Logos**: 5 variants (luxury-glass, energy-glass, r30, r31, r32)
+- **Products**: 6 product images (4 can renders, 2 glass plates)
+- **Campaign**: 4 Paris/Eiffel tower images
+- **Testimonials**: 3 AI-generated portrait images
+- **Textures**: 4 water texture backgrounds
+- **General**: banners, 360 can, product renders, misc (15 files)
+- **Total**: 40 files, ~25MB
 
 ### Pending Todos
 
@@ -54,8 +68,8 @@ None yet.
 
 ### Blockers/Concerns
 
-- Video asset quality unknown until pulled from live site — may need compression with FFmpeg to reach <5MB target
 - Formspree free tier is 50 submissions/month — confirm if sufficient or upgrade needed before Phase 6
+- WooCommerce products have no images assigned — product-can/glass files are the best available renders
 
 ## Deferred Items
 
@@ -69,5 +83,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-06-02
-Stopped at: Phase 1 complete — ready to plan Phase 2 (Assets)
+Stopped at: Phase 2 complete — ready to plan Phase 3 (Navigation & Hero)
 Resume file: None

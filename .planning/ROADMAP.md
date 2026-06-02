@@ -13,7 +13,7 @@ Rebuild the InTake Beverages LLC brand website as clean static HTML/CSS/JS — a
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Design System** - HTML scaffold, CSS design system tokens, responsive framework
-- [ ] **Phase 2: Assets** - Pull and optimize all images, video, and media from the live site
+- [x] **Phase 2: Assets** - Pull and optimize all images, video, and media from the live site
 - [ ] **Phase 3: Navigation & Hero** - Sticky header, smooth scroll, full-height video hero section
 - [ ] **Phase 4: Brand Story Sections** - Benefits, marquee, campaign, overview, about, statistics
 - [ ] **Phase 5: Products, Testimonials & Ingredients** - Product grid, testimonials carousel, ingredients cards
@@ -103,7 +103,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Design System | 1/1 | Complete | 2026-06-02 |
-| 2. Assets | 0/TBD | Not started | - |
+| 2. Assets | 1/1 | Complete | 2026-06-02 |
 | 3. Navigation & Hero | 0/TBD | Not started | - |
 | 4. Brand Story Sections | 0/TBD | Not started | - |
 | 5. Products, Testimonials & Ingredients | 0/TBD | Not started | - |
