@@ -168,76 +168,76 @@ Deferred to future release. Tracked but not in current roadmap.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| NAV-01 | TBD | Pending |
-| NAV-02 | TBD | Pending |
-| NAV-03 | TBD | Pending |
-| NAV-04 | TBD | Pending |
-| NAV-05 | TBD | Pending |
-| HERO-01 | TBD | Pending |
-| HERO-02 | TBD | Pending |
-| HERO-03 | TBD | Pending |
-| HERO-04 | TBD | Pending |
-| HERO-05 | TBD | Pending |
-| BENF-01 | TBD | Pending |
-| BENF-02 | TBD | Pending |
-| BENF-03 | TBD | Pending |
-| BENF-04 | TBD | Pending |
-| MARQ-01 | TBD | Pending |
-| MARQ-02 | TBD | Pending |
-| CAMP-01 | TBD | Pending |
-| CAMP-02 | TBD | Pending |
-| CAMP-03 | TBD | Pending |
-| CAMP-04 | TBD | Pending |
-| OVER-01 | TBD | Pending |
-| OVER-02 | TBD | Pending |
-| ABOU-01 | TBD | Pending |
-| ABOU-02 | TBD | Pending |
-| ABOU-03 | TBD | Pending |
-| STAT-01 | TBD | Pending |
-| STAT-02 | TBD | Pending |
-| PROD-01 | TBD | Pending |
-| PROD-02 | TBD | Pending |
-| PROD-03 | TBD | Pending |
-| PROD-04 | TBD | Pending |
-| TEST-01 | TBD | Pending |
-| TEST-02 | TBD | Pending |
-| TEST-03 | TBD | Pending |
-| TEST-04 | TBD | Pending |
-| TEST-05 | TBD | Pending |
-| INGR-01 | TBD | Pending |
-| INGR-02 | TBD | Pending |
-| INGR-03 | TBD | Pending |
-| CONT-01 | TBD | Pending |
-| CONT-02 | TBD | Pending |
-| CONT-03 | TBD | Pending |
-| CONT-04 | TBD | Pending |
-| CONT-05 | TBD | Pending |
-| FOOT-01 | TBD | Pending |
-| FOOT-02 | TBD | Pending |
-| FOOT-03 | TBD | Pending |
-| FOOT-04 | TBD | Pending |
-| FOOT-05 | TBD | Pending |
-| FOOT-06 | TBD | Pending |
-| DSGN-01 | TBD | Pending |
-| DSGN-02 | TBD | Pending |
-| DSGN-03 | TBD | Pending |
-| DSGN-04 | TBD | Pending |
-| DSGN-05 | TBD | Pending |
-| DSGN-06 | TBD | Pending |
-| RESP-01 | TBD | Pending |
-| RESP-02 | TBD | Pending |
-| RESP-03 | TBD | Pending |
-| RESP-04 | TBD | Pending |
-| ASST-01 | TBD | Pending |
-| ASST-02 | TBD | Pending |
-| ASST-03 | TBD | Pending |
-| ASST-04 | TBD | Pending |
+| DSGN-01 | Phase 1 | Pending |
+| DSGN-02 | Phase 1 | Pending |
+| DSGN-03 | Phase 1 | Pending |
+| DSGN-04 | Phase 1 | Pending |
+| DSGN-05 | Phase 1 | Pending |
+| DSGN-06 | Phase 1 | Pending |
+| RESP-01 | Phase 1 | Pending |
+| RESP-02 | Phase 1 | Pending |
+| RESP-03 | Phase 1 | Pending |
+| RESP-04 | Phase 1 | Pending |
+| ASST-01 | Phase 2 | Pending |
+| ASST-02 | Phase 2 | Pending |
+| ASST-03 | Phase 2 | Pending |
+| ASST-04 | Phase 2 | Pending |
+| NAV-01 | Phase 3 | Pending |
+| NAV-02 | Phase 3 | Pending |
+| NAV-03 | Phase 3 | Pending |
+| NAV-04 | Phase 3 | Pending |
+| NAV-05 | Phase 3 | Pending |
+| HERO-01 | Phase 3 | Pending |
+| HERO-02 | Phase 3 | Pending |
+| HERO-03 | Phase 3 | Pending |
+| HERO-04 | Phase 3 | Pending |
+| HERO-05 | Phase 3 | Pending |
+| BENF-01 | Phase 4 | Pending |
+| BENF-02 | Phase 4 | Pending |
+| BENF-03 | Phase 4 | Pending |
+| BENF-04 | Phase 4 | Pending |
+| MARQ-01 | Phase 4 | Pending |
+| MARQ-02 | Phase 4 | Pending |
+| CAMP-01 | Phase 4 | Pending |
+| CAMP-02 | Phase 4 | Pending |
+| CAMP-03 | Phase 4 | Pending |
+| CAMP-04 | Phase 4 | Pending |
+| OVER-01 | Phase 4 | Pending |
+| OVER-02 | Phase 4 | Pending |
+| ABOU-01 | Phase 4 | Pending |
+| ABOU-02 | Phase 4 | Pending |
+| ABOU-03 | Phase 4 | Pending |
+| STAT-01 | Phase 4 | Pending |
+| STAT-02 | Phase 4 | Pending |
+| PROD-01 | Phase 5 | Pending |
+| PROD-02 | Phase 5 | Pending |
+| PROD-03 | Phase 5 | Pending |
+| PROD-04 | Phase 5 | Pending |
+| TEST-01 | Phase 5 | Pending |
+| TEST-02 | Phase 5 | Pending |
+| TEST-03 | Phase 5 | Pending |
+| TEST-04 | Phase 5 | Pending |
+| TEST-05 | Phase 5 | Pending |
+| INGR-01 | Phase 5 | Pending |
+| INGR-02 | Phase 5 | Pending |
+| INGR-03 | Phase 5 | Pending |
+| CONT-01 | Phase 6 | Pending |
+| CONT-02 | Phase 6 | Pending |
+| CONT-03 | Phase 6 | Pending |
+| CONT-04 | Phase 6 | Pending |
+| CONT-05 | Phase 6 | Pending |
+| FOOT-01 | Phase 6 | Pending |
+| FOOT-02 | Phase 6 | Pending |
+| FOOT-03 | Phase 6 | Pending |
+| FOOT-04 | Phase 6 | Pending |
+| FOOT-05 | Phase 6 | Pending |
+| FOOT-06 | Phase 6 | Pending |
 
 **Coverage:**
 - v1 requirements: 58 total
-- Mapped to phases: 0
-- Unmapped: 58 ⚠️
+- Mapped to phases: 58
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-06-02*
-*Last updated: 2026-06-02 after initial definition*
+*Last updated: 2026-06-02 after roadmap creation — all 58 requirements mapped to 6 phases*
