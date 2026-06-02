@@ -12,7 +12,7 @@ Rebuild the InTake Beverages LLC brand website as clean static HTML/CSS/JS — a
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation & Design System** - HTML scaffold, CSS design system tokens, responsive framework
+- [x] **Phase 1: Foundation & Design System** - HTML scaffold, CSS design system tokens, responsive framework
 - [ ] **Phase 2: Assets** - Pull and optimize all images, video, and media from the live site
 - [ ] **Phase 3: Navigation & Hero** - Sticky header, smooth scroll, full-height video hero section
 - [ ] **Phase 4: Brand Story Sections** - Benefits, marquee, campaign, overview, about, statistics
@@ -30,7 +30,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Resizing the browser from 320px to 1200px+ causes layout to reflow correctly at each breakpoint with no overflow or broken containers
   3. CSS custom properties for teal/cyan (#00BCD4), dark navy (#1a3a3a), and light cyan (#4DD0E1) are defined and applied to a sample heading to confirm the design tokens work
   4. BEM file structure and component naming convention is in place and documented in a comment block
-**Plans**: TBD
+**Plans**: 1/1 complete
 **UI hint**: yes
 
 ### Phase 2: Assets
@@ -102,7 +102,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Design System | 0/TBD | Not started | - |
+| 1. Foundation & Design System | 1/1 | Complete | 2026-06-02 |
 | 2. Assets | 0/TBD | Not started | - |
 | 3. Navigation & Hero | 0/TBD | Not started | - |
 | 4. Brand Story Sections | 0/TBD | Not started | - |
