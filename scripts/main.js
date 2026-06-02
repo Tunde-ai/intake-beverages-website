@@ -96,4 +96,53 @@
 
     startAutoRotate();
   }
+
+  /* ── Form Submissions — CONT-05, FOOT-04 ──────────────────── */
+
+  function handleFormSubmit(form, statusEl, successMsg) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var data = new FormData(form);
+      var btn = form.querySelector('[type="submit"]');
+      var originalText = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function (response) {
+        if (response.ok) {
+          statusEl.textContent = successMsg;
+          statusEl.className = statusEl.className.replace(/--error/, '') + '--success';
+          form.reset();
+        } else {
+          throw new Error('Submission failed');
+        }
+      })
+      .catch(function () {
+        statusEl.textContent = 'Something went wrong. Please try again.';
+        statusEl.className = statusEl.className.replace(/--success/, '') + '--error';
+      })
+      .finally(function () {
+        btn.textContent = originalText;
+        btn.disabled = false;
+      });
+    });
+  }
+
+  var contactForm = document.getElementById('contact-form');
+  var contactStatus = document.getElementById('contact-status');
+  if (contactForm && contactStatus) {
+    handleFormSubmit(contactForm, contactStatus, 'Message sent successfully! We\'ll be in touch.');
+  }
+
+  var newsletterForm = document.getElementById('newsletter-form');
+  var newsletterStatus = document.getElementById('newsletter-status');
+  if (newsletterForm && newsletterStatus) {
+    handleFormSubmit(newsletterForm, newsletterStatus, 'Subscribed! Welcome to the InTake family.');
+  }
 })();

@@ -5,21 +5,21 @@
 See: .planning/PROJECT.md (updated 2026-06-02)
 
 **Core value:** Communicate InTake's premium luxury identity — every section must feel high-end, cinematic, and intentional
-**Current focus:** Phase 6 — Contact, Footer & Launch
+**Current focus:** All phases complete — ready for deployment
 
 ## Current Position
 
-Phase: 6 of 6 (Contact, Footer & Launch)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-06-02 — Phase 5 completed (Products, Testimonials & Ingredients)
+Phase: 6 of 6 (Contact, Footer & Launch) — COMPLETE
+Plan: 6/6 phases complete
+Status: Complete (pending deployment)
+Last activity: 2026-06-02 — Phase 6 completed (Contact, Footer & Launch)
 
-Progress: [████████░░] 83%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
+- Total plans completed: 6
 - Average duration: —
 - Total execution time: —
 
@@ -32,10 +32,11 @@ Progress: [████████░░] 83%
 | 3. Navigation & Hero | 1 | — | — |
 | 4. Brand Story Sections | 1 | — | — |
 | 5. Products, Testimonials & Ingredients | 1 | — | — |
+| 6. Contact, Footer & Launch | 1 | — | — |
 
 **Recent Trend:**
-- Last 5 plans: Phase 1–5 complete
-- Trend: —
+- All 6 phases completed in single session
+- Trend: Complete
 
 *Updated after each plan completion*
 
@@ -53,15 +54,18 @@ Progress: [████████░░] 83%
 - IIFE pattern for main.js — no global pollution
 - Campaign copy sourced from WP REST API /pages/799 (InTake Paris page)
 - Marquee uses CSS-only infinite scroll (duplicated span trick, translateX -50%)
+- AJAX form submissions with Formspree — placeholder form IDs need real ones before deploy
 
 ### Pending Todos
 
-None yet.
+- Replace Formspree placeholder form IDs (xcontact, xnewsletter) with real endpoints
+- Deploy to Netlify or Vercel
+- Cross-browser test in Chrome, Firefox, Safari, Edge
 
 ### Blockers/Concerns
 
-- Formspree free tier is 50 submissions/month — confirm if sufficient or upgrade needed before Phase 6
-- WooCommerce products have no images assigned — product-can/glass files are the best available renders
+- Formspree form IDs are placeholders — must create real forms at formspree.io before launch
+- Formspree free tier is 50 submissions/month — confirm if sufficient or upgrade needed
 
 ## Deferred Items
 
@@ -75,5 +79,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-06-02
-Stopped at: Phase 5 complete — ready to plan Phase 6 (Contact, Footer & Launch)
+Stopped at: All 6 phases complete — site ready for deployment
 Resume file: None

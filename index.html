@@ -335,17 +335,78 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact — CONT-01 through CONT-05 -->
   <section class="contact" id="contact">
     <div class="contact__container container">
-      <!-- Contact form added in Phase 6 -->
+      <h2 class="contact__heading">Get In Touch</h2>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__block">
+            <h3 class="contact__block-title">Paris Office</h3>
+            <p class="contact__block-text">75 Avenue des Champs-&Eacute;lys&eacute;es<br>75008 Paris, France</p>
+          </div>
+          <div class="contact__block">
+            <h3 class="contact__block-title">USA Office</h3>
+            <p class="contact__block-text">Houston, Texas<br>United States</p>
+          </div>
+          <div class="contact__block">
+            <h3 class="contact__block-title">Email</h3>
+            <p class="contact__block-text"><a href="mailto:info@intakebeverages.com">info@intakebeverages.com</a></p>
+          </div>
+        </div>
+        <div class="contact__form-wrapper">
+          <p class="contact__phone">+1 (800) INTAKE-1</p>
+          <form class="contact__form" id="contact-form" action="https://formspree.io/f/xcontact" method="POST">
+            <input type="text" name="name" class="contact__input" placeholder="Name" required>
+            <input type="email" name="email" class="contact__input" placeholder="Email" required>
+            <input type="text" name="subject" class="contact__input" placeholder="Subject" required>
+            <textarea name="message" class="contact__textarea" placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="contact__submit">Send Message</button>
+          </form>
+          <p class="contact__status" id="contact-status"></p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer — FOOT-01 through FOOT-06 -->
   <footer class="footer" id="footer">
     <div class="footer__container container">
-      <!-- Footer content added in Phase 6 -->
+      <div class="footer__grid">
+        <div class="footer__column">
+          <h3 class="footer__title">Quick Links</h3>
+          <ul class="footer__list">
+            <li><a href="#about" class="footer__link">About</a></li>
+            <li><a href="#products" class="footer__link">Product</a></li>
+            <li><a href="#campaign" class="footer__link">Campaigns</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title">Campaigns</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Intake Paris</a></li>
+            <li><a href="#" class="footer__link">Intake Lux</a></li>
+            <li><a href="#" class="footer__link">Intake MVP</a></li>
+            <li><a href="#" class="footer__link">Intake Rescue</a></li>
+            <li><a href="#" class="footer__link">Intake 360</a></li>
+            <li><a href="#" class="footer__link">Intake Electric</a></li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column--newsletter">
+          <h3 class="footer__title">Newsletter</h3>
+          <p class="footer__text">Stay updated with new flavors, campaigns, and the InTake lifestyle.</p>
+          <form class="footer__newsletter" id="newsletter-form" action="https://formspree.io/f/xnewsletter" method="POST">
+            <input type="email" name="email" class="footer__newsletter-input" placeholder="Your email" required>
+            <button type="submit" class="footer__newsletter-btn">Subscribe</button>
+          </form>
+          <p class="footer__newsletter-status" id="newsletter-status"></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">The Worlds Brand &amp; InTake Global. Copyright &copy; 2026. All rights reserved.</p>
+        <p class="footer__tagline">Fuel from within, intake the energy that reflects you</p>
+      </div>
     </div>
   </footer>
 
