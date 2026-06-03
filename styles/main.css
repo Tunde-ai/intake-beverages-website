@@ -101,34 +101,61 @@ ul { list-style: none; }
 }
 .hero__overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(0,20,20,0.3) 0%, rgba(0,0,0,0.15) 40%, rgba(0,20,20,0.5) 100%);
+  background: rgba(0, 20, 20, 0.25);
   z-index: 1;
 }
-.hero__content { position: relative; z-index: 2; text-align: center; }
+/* Text knockout mask — video shows through the letters */
+.hero__text-mask {
+  position: relative; z-index: 2;
+  text-align: center;
+  background: rgba(15, 40, 45, 0.55);
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* This makes the dark bg transparent ONLY where text is,
+     revealing the video underneath through the letterforms */
+}
 .hero__title {
-  font-size: var(--font-size-hero);
-  font-weight: 900; text-transform: capitalize;
-  letter-spacing: 0.02em;
+  font-size: clamp(5rem, 14vw, 12rem);
+  font-weight: 900;
   font-style: italic;
-  /* See-through glass effect — video shows through the text */
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 188, 212, 0.3);
+  /* The actual see-through effect: video as text fill */
   background: linear-gradient(
     180deg,
-    rgba(0, 188, 212, 0.6) 0%,
-    rgba(77, 208, 225, 0.35) 30%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(0, 188, 212, 0.4) 70%,
-    rgba(0, 96, 100, 0.6) 100%
+    rgba(0, 150, 170, 0.45) 0%,
+    rgba(0, 188, 212, 0.2) 25%,
+    transparent 45%,
+    transparent 55%,
+    rgba(0, 188, 212, 0.2) 75%,
+    rgba(0, 100, 120, 0.4) 100%
   );
-  -webkit-background-clip: text; background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  mix-blend-mode: screen;
-  filter: drop-shadow(0 0 20px rgba(0, 188, 212, 0.3));
+  mix-blend-mode: normal;
+  filter: drop-shadow(0 2px 15px rgba(0, 188, 212, 0.15));
 }
 .hero__subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  font-weight: 700; color: rgba(255,255,255,0.6);
-  letter-spacing: 0.4em; margin-top: 0.25rem;
+  font-size: clamp(1rem, 3vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  margin-top: 0.15rem;
   text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.35);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 150, 170, 0.4) 0%,
+    transparent 40%,
+    transparent 60%,
+    rgba(0, 100, 120, 0.35) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ── "Energy That Reflects You" ─────────────────────────────── */
