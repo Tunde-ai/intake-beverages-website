@@ -104,15 +104,9 @@ ul { list-style: none; }
   background: rgba(0, 20, 20, 0.25);
   z-index: 1;
 }
-/* Text knockout mask — video shows through the letters */
 .hero__text-mask {
   position: relative; z-index: 2;
   text-align: center;
-  background: rgba(15, 40, 45, 0.55);
-  -webkit-background-clip: text;
-  background-clip: text;
-  /* This makes the dark bg transparent ONLY where text is,
-     revealing the video underneath through the letterforms */
 }
 .hero__title {
   font-size: clamp(5rem, 14vw, 12rem);
@@ -120,42 +114,30 @@ ul { list-style: none; }
   font-style: italic;
   letter-spacing: -0.02em;
   line-height: 0.9;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(0, 188, 212, 0.3);
-  /* The actual see-through effect: video as text fill */
+  /* Teal glass effect — readable but with video subtly showing through */
   background: linear-gradient(
     180deg,
-    rgba(0, 150, 170, 0.45) 0%,
-    rgba(0, 188, 212, 0.2) 25%,
-    transparent 45%,
-    transparent 55%,
-    rgba(0, 188, 212, 0.2) 75%,
-    rgba(0, 100, 120, 0.4) 100%
+    #3fb8c4 0%,
+    #1a8a96 30%,
+    #0d6b78 50%,
+    #1a8a96 70%,
+    #3fb8c4 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  mix-blend-mode: normal;
-  filter: drop-shadow(0 2px 15px rgba(0, 188, 212, 0.15));
+  -webkit-text-stroke: 1px rgba(0, 188, 212, 0.4);
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+  mix-blend-mode: hard-light;
 }
 .hero__subtitle {
-  font-size: clamp(1rem, 3vw, 1.75rem);
+  font-size: clamp(1.1rem, 3vw, 1.75rem);
   font-weight: 700;
-  letter-spacing: 0.35em;
-  margin-top: 0.15rem;
+  letter-spacing: 0.3em;
+  margin-top: 0.25rem;
   text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.35);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 150, 170, 0.4) 0%,
-    transparent 40%,
-    transparent 60%,
-    rgba(0, 100, 120, 0.35) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgba(180, 220, 225, 0.7);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* ── "Energy That Reflects You" ─────────────────────────────── */
