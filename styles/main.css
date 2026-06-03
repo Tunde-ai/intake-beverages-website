@@ -161,12 +161,13 @@ ul { list-style: none; }
   margin-bottom: 1.5rem;
 }
 .reflects-you__tagline {
-  font-size: var(--font-size-body);
+  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
   font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: rgba(255,255,255,0.85);
-  max-width: 700px; margin-inline: auto;
-  line-height: 1.8;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.9);
+  max-width: 750px; margin-inline: auto;
+  line-height: 1.7;
 }
 
 /* ── "What You Intake?" Cards ───────────────────────────────── */
@@ -221,15 +222,15 @@ ul { list-style: none; }
   pointer-events: none;
 }
 .intake-cards__card-title {
-  font-size: var(--font-size-h3);
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
   font-weight: 800; text-transform: uppercase;
   color: var(--color-white);
   margin-bottom: 0.75rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 .intake-cards__card-text {
-  font-size: var(--font-size-small);
-  color: rgba(255,255,255,0.8);
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+  color: rgba(255,255,255,0.85);
   line-height: 1.7;
 }
 
