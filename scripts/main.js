@@ -21,6 +21,22 @@
 
   window.addEventListener('scroll', onScroll, { passive: true });
 
+  /* ── Scroll Reveal — elements animate in as you scroll ─────── */
+
+  var revealElements = document.querySelectorAll('.scroll-reveal');
+  var revealObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('scroll-reveal--visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  revealElements.forEach(function (el) {
+    revealObserver.observe(el);
+  });
+
   /* ── Hamburger Toggle — NAV-04 ─────────────────────────────── */
 
   hamburger.addEventListener('click', function () {
