@@ -9,26 +9,7 @@
 </head>
 <body>
 
-  <!-- ============================================================
-       SITE STRUCTURE — BEM Component Naming Convention
-       ============================================================
-       Block:    .header, .hero, .benefits, .marquee, etc.
-       Element:  .header__logo, .hero__title, .benefits__card
-       Modifier: .header--scrolled, .nav__link--active
-
-       Each major section uses a top-level BEM block.
-       Nested elements use double-underscore (__).
-       State variants use double-hyphen (- -).
-
-       File Structure:
-         index.html          — page markup
-         styles/main.css     — design tokens + all component styles
-         scripts/main.js     — interactions (added in later phases)
-         assets/images/      — optimized images (Phase 2)
-         assets/video/       — background video (Phase 2)
-       ============================================================ -->
-
-  <!-- Header / Navigation — NAV-01 through NAV-05 -->
+  <!-- Header -->
   <header class="header" id="header">
     <div class="header__container container">
       <a href="#hero" class="header__logo">InTake</a>
@@ -40,13 +21,13 @@
       </nav>
       <div class="header__social">
         <a href="#" class="header__social-link" aria-label="Facebook">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
         </a>
         <a href="#" class="header__social-link" aria-label="Twitter">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         </a>
         <a href="#" class="header__social-link" aria-label="YouTube">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
         </a>
       </div>
       <button class="header__hamburger" id="hamburger" aria-label="Toggle navigation">
@@ -57,167 +38,117 @@
     </div>
   </header>
 
-  <!-- Hero — HERO-01 through HERO-05 -->
+  <!-- Hero -->
   <section class="hero" id="hero">
     <video class="hero__video" autoplay muted loop playsinline poster="assets/video/waterfall-poster.jpg">
       <source src="assets/video/waterfall-hero.mp4" type="video/mp4">
     </video>
     <div class="hero__overlay"></div>
-    <div class="hero__content container">
+    <div class="hero__content">
       <h1 class="hero__title">InTake</h1>
       <p class="hero__subtitle">ENERGY + WATER</p>
-      <p class="hero__tagline">ENERGY THAT REFLECTS YOU</p>
-      <p class="hero__description">We exist for the energy, the impact, and the growth.</p>
+    </div>
+    <div class="hero__can">
+      <img src="assets/products/can-render-cutout.png" alt="InTake Energy Can">
     </div>
   </section>
 
-  <!-- Benefits — "What You Intake?" — BENF-01, BENF-02 -->
-  <section class="benefits" id="benefits">
-    <div class="benefits__container container">
-      <h2 class="benefits__heading">What You Intake?</h2>
-      <div class="benefits__grid">
-        <div class="benefits__card">
-          <h3 class="benefits__card-title">Hydration</h3>
-          <p class="benefits__card-text">Pure, revitalizing hydration infused with essential electrolytes to keep your body balanced and refreshed throughout the day.</p>
+  <!-- Energy That Reflects You -->
+  <section class="reflects-you" id="reflects-you">
+    <div class="reflects-you__container container">
+      <h2 class="reflects-you__heading"><span>ENERGY THAT REFLECTS YOU</span></h2>
+      <p class="reflects-you__tagline">THE PURPOSE OF OUR EXISTENCE IS TO INCREASE ENERGY, IMPACT PROGRESS, AND REFLECT GROWTH</p>
+    </div>
+  </section>
+
+  <!-- What You Intake? -->
+  <section class="intake-cards" id="benefits">
+    <div class="intake-cards__container container">
+      <h2 class="intake-cards__heading"><span>WHAT YOU INTAKE?</span></h2>
+      <div class="intake-cards__grid">
+        <div class="intake-cards__card">
+          <h3 class="intake-cards__card-title">HYDRATION</h3>
+          <p class="intake-cards__card-text">InTake Energy + Water enhances the hydration experience by supplementing its composition by making it more comprehensive and flavorful. (Provides Sodium chloride &amp; coconut water powder)</p>
         </div>
-        <div class="benefits__card">
-          <h3 class="benefits__card-title">Energy</h3>
-          <p class="benefits__card-text">Clean, sustained energy from natural sources that fuels your performance without the crash or jitters.</p>
+        <div class="intake-cards__card">
+          <h3 class="intake-cards__card-title">ENERGY</h3>
+          <p class="intake-cards__card-text">InTake features a blend of organic ingredients, including caffeine from green tea extract, potassium citrate, calcium lactate, and vitamins B3, B6 and B12, which work synergistically.</p>
         </div>
-        <div class="benefits__card">
-          <h3 class="benefits__card-title">Boost</h3>
-          <p class="benefits__card-text">A powerful blend of vitamins and nutrients designed to elevate your focus, endurance, and vitality.</p>
+        <div class="intake-cards__card">
+          <h3 class="intake-cards__card-title">BOOST</h3>
+          <p class="intake-cards__card-text">InTake incorporates natural coconut caffeine derived from guarana, green tea, and coffee beans, delivering the true offerings from the Natural Reserves: 150 mg of Caffeine.</p>
         </div>
-        <div class="benefits__card">
-          <h3 class="benefits__card-title">Sweeteners</h3>
-          <p class="benefits__card-text">Zero artificial sweeteners. Only natural, guilt-free flavor that complements the premium ingredients inside.</p>
+        <div class="intake-cards__card">
+          <h3 class="intake-cards__card-title">SWEETENERS</h3>
+          <p class="intake-cards__card-text">InTake is sweetened with natural Sugar (Raw) cane, sucralose and Stevia leaf extract, carefully blended to deliver great taste while maintaining a refreshingly lower calorie content.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Key Benefits — BENF-03, BENF-04 -->
-  <section class="key-benefits" id="key-benefits">
-    <div class="key-benefits__container container">
-      <h2 class="key-benefits__heading">Key Benefits</h2>
-      <div class="key-benefits__grid">
-        <div class="key-benefits__column">
-          <h3 class="key-benefits__title">Increases</h3>
-          <ul class="key-benefits__list">
-            <li>Energy</li>
-            <li>Hydration</li>
-            <li>Vitality</li>
-          </ul>
-        </div>
-        <div class="key-benefits__column">
-          <h3 class="key-benefits__title">Sustains</h3>
-          <ul class="key-benefits__list">
-            <li>Endurance</li>
-            <li>Strength</li>
-            <li>Growth</li>
-          </ul>
-        </div>
-        <div class="key-benefits__column">
-          <h3 class="key-benefits__title">Reflects</h3>
-          <ul class="key-benefits__list">
-            <li>Performance</li>
-            <li>Image</li>
-            <li>Elevation</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Marquee — MARQ-01, MARQ-02 -->
+  <!-- Marquee -->
   <section class="marquee" id="marquee">
     <div class="marquee__track">
-      <span class="marquee__text">LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull;&nbsp;</span>
-      <span class="marquee__text">LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull;&nbsp;</span>
+      <span class="marquee__text">PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull;&nbsp;</span>
+      <span class="marquee__text">PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull; PERFORMANCE &bull; LUXURY &bull; LIFESTYLE &bull; CULTURE &bull;&nbsp;</span>
     </div>
   </section>
 
-  <!-- Campaign — "InTake Paris - Apricot Mist" — CAMP-01 through CAMP-04 -->
+  <!-- Key Benefits — Athlete Panels -->
+  <section class="key-benefits" id="key-benefits">
+    <div class="key-benefits__grid">
+      <div class="key-benefits__panel key-benefits__panel--reflects">
+        <div class="key-benefits__panel-content">
+          <h3 class="key-benefits__panel-title">Reflects:</h3>
+          <p class="key-benefits__panel-text">Performance, Image, Elevation</p>
+        </div>
+      </div>
+      <div class="key-benefits__panel key-benefits__panel--sustains">
+        <div class="key-benefits__panel-content">
+          <h3 class="key-benefits__panel-title">Sustains:</h3>
+          <p class="key-benefits__panel-text">Endurance, Strength, Growth</p>
+        </div>
+      </div>
+      <div class="key-benefits__panel key-benefits__panel--increases">
+        <div class="key-benefits__panel-content">
+          <h3 class="key-benefits__panel-title">Increases:</h3>
+          <p class="key-benefits__panel-text">Energy, Hydration, Vitality</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- InTake Paris - Apricot Mist -->
   <section class="campaign" id="campaign">
     <div class="campaign__container container">
       <div class="campaign__content">
-        <p class="campaign__label">Campaigns</p>
-        <h2 class="campaign__title">InTake Paris &mdash; Apricot Mist</h2>
-        <p class="campaign__subtitle text-accent">Eyes of Paris, La Ville aux Mille Regards (The City of a Thousand Gazes)</p>
-        <p class="campaign__text">Dear Parisians, What better way to pay homage to the City of Love than a beverage that reflects the most magical time of the day &mdash; golden hour. This beverage carries you through a love story where Dusk meets Dawn.</p>
-        <p class="campaign__text">Elderflower, sourced from Brittany's woodlands &mdash; a wild beauty, historically cherished for aromatic oils and remedies, known for its <span class="text-accent">subtle, elegant character appreciated by a gentleman's palate.</span></p>
-        <p class="campaign__text">Apricot from Roussillon valleys represents southern warmth, bringing brightness to Rh&ocirc;ne Valley summers. <span class="text-accent">Nostalgic and quietly luxurious &mdash; very southern-French in spirit.</span></p>
-        <p class="campaign__text">When they met, it was connection at first sight. All of the Eyes of Paris lit, glowing as they lay watch, each seeing in the other what they themselves could not. The sun shed tears of joy in the form of dew, pouring from the blades of leaves, watering the taste of Apricot Mist.</p>
-        <p class="campaign__closing text-accent">With Love, &hellip; La Ville Lumi&egrave;re</p>
-        <a href="#" class="campaign__link">Explore InTake Paris &rarr;</a>
-      </div>
-      <div class="campaign__image">
-        <img src="assets/campaign/eiffel-tower-bw.jpg" alt="Eiffel Tower in black and white — InTake Paris campaign">
+        <h2 class="campaign__title">INTAKE PARIS - APRICOT MIST</h2>
+        <p class="campaign__subtitle"><em>Eyes of Paris, La Ville aux Mille Regards (The City of a Thousand Gazes)</em></p>
+        <p class="campaign__text">Dear Parisians,</p>
+        <p class="campaign__text">What better way to pay homage to the <strong>City of Love</strong> than a beverage that reflects the most magical time of the day&mdash;golden hour. This beverage carries you through a love story where <strong>Dusk meets Dawn.</strong></p>
+        <p class="campaign__text">Sourced from the woodlands of Brittany lies the <strong>wild beauty</strong>&mdash;elderflower (Dower). Long used for aromatic oils and ancient remedies, French elderflower holds a natural elegance: subtle and seasonal... almost understated. Its modest notes are the kind a gentleman's palate would savor.</p>
+        <p class="campaign__text">Hailing from the valleys of Roussillon lies <strong>southern warmth</strong>&mdash;apricot (Dual). Often associated with stone-washed villages, French abricot brings brightness and charm to Rh&ocirc;ne Valley summers. Apricot is nostalgic and <strong>quietly luxurious&mdash; very southern-French</strong> in spirit. Its warm notes are the kind a lady's palate would adore.</p>
+        <p class="campaign__text">As a summer evening approached through the day, that elusive joy overcame the night. When they met, it was connection at first sight. All of the <strong>Eyes of Paris</strong> lit, glowing as they lay watch, each seeing in the other what they themselves could not. The sun shed tears of joy in the form of dew, pouring from the blades of leaves, watering the taste of Apricot Mist.</p>
+        <p class="campaign__text">With Love,</p>
+        <p class="campaign__closing"><em>...La Ville Lumi&egrave;re</em></p>
       </div>
     </div>
   </section>
 
-  <!-- Overview — OVER-01, OVER-02 -->
+  <!-- Overview -->
   <section class="overview" id="overview">
     <div class="overview__container container">
-      <h2 class="overview__heading">InTake Global &amp; Beverages</h2>
-      <p class="overview__text">InTake Beverages LLC is a luxury energy drink company founded on the belief that what you consume should reflect who you are. Our beverages are crafted for those who demand more &mdash; more energy, more style, more impact.</p>
-      <p class="overview__text">From our origins in premium hydration to our expansion into lifestyle culture, InTake represents a new standard in the beverage industry. Every can is a statement. Every sip is intentional.</p>
-    </div>
-  </section>
-
-  <!-- About — ABOU-01, ABOU-02, ABOU-03 -->
-  <section class="about" id="about">
-    <div class="about__container container">
-      <div class="about__content">
-        <h2 class="about__heading">We Serve The Best And Healthy Juice</h2>
-        <div class="about__features">
-          <div class="about__feature">
-            <h3 class="about__feature-title">Fresh Juice</h3>
-            <p class="about__feature-text">Made from the finest natural ingredients, our beverages deliver pure, clean flavor with every sip.</p>
-          </div>
-          <div class="about__feature">
-            <h3 class="about__feature-title">Many Variants</h3>
-            <p class="about__feature-text">From Apricot Mist to Apple Citric, explore a lineup of bold flavors crafted for every moment.</p>
-          </div>
-          <div class="about__feature">
-            <h3 class="about__feature-title">Hygienic Tools</h3>
-            <p class="about__feature-text">Produced with the highest standards of quality, safety, and hygiene at every stage of the process.</p>
-          </div>
-        </div>
-        <a href="#contact" class="about__cta">About Us &rarr;</a>
+      <div class="overview__content">
+        <h2 class="overview__heading">OVERVIEW</h2>
+        <p class="overview__text">InTake Global &amp; Beverages is a Florida-based, independently owned and operated company founded in 2019 by creative pharmaceutical Xavier R Artis. Committed to social causes, the company is guided by its motto, &ldquo;InTake is not just products, it's the promise of progress,&rdquo; focusing on education, wellness, and raising awareness. Its flagship products, InTake Energy + Water drinks, along with custom and limited-edition white label offerings, are designed to support and promote diversity within the beverage industry globally.</p>
       </div>
-      <div class="about__image">
-        <img src="assets/images/gemini-product-1.png" alt="InTake Beverages product showcase">
+      <div class="overview__media">
+        <img src="assets/images/banner-r3.jpg" alt="InTake team" class="overview__image">
       </div>
     </div>
   </section>
 
-  <!-- Statistics — STAT-01, STAT-02 -->
-  <section class="statistics" id="statistics">
-    <div class="statistics__container container">
-      <div class="statistics__grid">
-        <div class="statistics__item">
-          <span class="statistics__number">24</span>
-          <span class="statistics__label">Best Award</span>
-        </div>
-        <div class="statistics__item">
-          <span class="statistics__number">2,150</span>
-          <span class="statistics__label">Happy Customer</span>
-        </div>
-        <div class="statistics__item">
-          <span class="statistics__number">30</span>
-          <span class="statistics__label">Team Juicer</span>
-        </div>
-        <div class="statistics__item">
-          <span class="statistics__number">100%</span>
-          <span class="statistics__label">Hygienic</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Products — PROD-01 through PROD-04 -->
+  <!-- Products -->
   <section class="products" id="products">
     <div class="products__container container">
       <p class="products__label">Our Product</p>
@@ -233,7 +164,7 @@
         </div>
         <div class="products__card">
           <div class="products__card-image">
-            <img src="assets/products/product-can-2.png" alt="InTake Apricot Mist Beverage">
+            <img src="assets/products/product-can-2.png" alt="InTake Apricot Mist">
           </div>
           <h3 class="products__card-name">InTake Apricot Mist</h3>
           <p class="products__card-price">$35.00</p>
@@ -241,7 +172,7 @@
         </div>
         <div class="products__card">
           <div class="products__card-image">
-            <img src="assets/products/product-can-3.png" alt="InTake 360 Beverage">
+            <img src="assets/products/product-can-3.png" alt="InTake 360">
           </div>
           <h3 class="products__card-name">InTake 360</h3>
           <p class="products__card-price">$32.00</p>
@@ -249,7 +180,7 @@
         </div>
         <div class="products__card">
           <div class="products__card-image">
-            <img src="assets/products/product-can-4.png" alt="InTake Hydration Beverage">
+            <img src="assets/products/product-can-4.png" alt="InTake Hydration">
           </div>
           <h3 class="products__card-name">InTake Hydration</h3>
           <p class="products__card-price">$33.00</p>
@@ -259,7 +190,7 @@
     </div>
   </section>
 
-  <!-- Testimonials — TEST-01 through TEST-05 -->
+  <!-- Testimonials -->
   <section class="testimonials" id="testimonials">
     <div class="testimonials__container container">
       <p class="testimonials__label">Testimonials</p>
@@ -298,67 +229,51 @@
           </div>
         </div>
         <div class="testimonials__controls">
-          <button class="testimonials__btn testimonials__btn--prev" aria-label="Previous testimonial">&larr;</button>
-          <div class="testimonials__dots" id="carousel-dots">
+          <button class="testimonials__btn testimonials__btn--prev" aria-label="Previous">&larr;</button>
+          <div class="testimonials__dots">
             <span class="testimonials__dot testimonials__dot--active"></span>
             <span class="testimonials__dot"></span>
             <span class="testimonials__dot"></span>
           </div>
-          <button class="testimonials__btn testimonials__btn--next" aria-label="Next testimonial">&rarr;</button>
+          <button class="testimonials__btn testimonials__btn--next" aria-label="Next">&rarr;</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Ingredients — INGR-01 through INGR-03 -->
-  <section class="ingredients" id="ingredients">
-    <div class="ingredients__container container">
-      <h2 class="ingredients__heading">Inside Our Fresh Juice</h2>
-      <div class="ingredients__grid">
-        <div class="ingredients__card">
-          <span class="ingredients__percent">11%</span>
-          <h3 class="ingredients__name">Folate</h3>
-        </div>
-        <div class="ingredients__card">
-          <span class="ingredients__percent">83%</span>
-          <h3 class="ingredients__name">Vitamin C</h3>
-        </div>
-        <div class="ingredients__card">
-          <span class="ingredients__percent">20%</span>
-          <h3 class="ingredients__name">Potassium</h3>
-        </div>
-        <div class="ingredients__card">
-          <span class="ingredients__percent">19%</span>
-          <h3 class="ingredients__name">Thiamine B1</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact — CONT-01 through CONT-05 -->
+  <!-- Get In Touch -->
   <section class="contact" id="contact">
     <div class="contact__container container">
-      <h2 class="contact__heading">Get In Touch</h2>
+      <h2 class="contact__heading">GET IN TOUCH</h2>
       <div class="contact__grid">
         <div class="contact__info">
           <div class="contact__block">
-            <h3 class="contact__block-title">Paris Office</h3>
-            <p class="contact__block-text">75 Avenue des Champs-&Eacute;lys&eacute;es<br>75008 Paris, France</p>
+            <h3 class="contact__block-title">LOCATION PARIS</h3>
+            <p class="contact__block-text">InTake Global &amp; Beverages SAS 15<br>Place Vend&ocirc;me Hall G - 2nd Floor<br>75001 Paris France</p>
           </div>
           <div class="contact__block">
-            <h3 class="contact__block-title">USA Office</h3>
-            <p class="contact__block-text">Houston, Texas<br>United States</p>
+            <h3 class="contact__block-title">LOCATION USA</h3>
+            <p class="contact__block-text">200 S Andrews Ave Suite #504 Fort<br>Lauderdale Florida 33301</p>
           </div>
           <div class="contact__block">
-            <h3 class="contact__block-title">Email</h3>
-            <p class="contact__block-text"><a href="mailto:info@intakebeverages.com">info@intakebeverages.com</a></p>
+            <h3 class="contact__block-title">PHONE</h3>
+            <p class="contact__block-text">+33 1 53 45 54 24</p>
+          </div>
+          <div class="contact__block">
+            <h3 class="contact__block-title">EMAIL</h3>
+            <p class="contact__block-text"><a href="mailto:info@intakeimpact.com">info@intakeimpact.com</a></p>
+          </div>
+          <div class="contact__block">
+            <h3 class="contact__block-title">EMAIL</h3>
+            <p class="contact__block-text"><a href="mailto:info@intakeimpact.com">info@intakeimpact.com</a></p>
           </div>
         </div>
         <div class="contact__form-wrapper">
-          <p class="contact__phone">+1 (800) INTAKE-1</p>
           <form class="contact__form" id="contact-form" action="https://formspree.io/f/xcontact" method="POST">
-            <input type="text" name="name" class="contact__input" placeholder="Name" required>
-            <input type="email" name="email" class="contact__input" placeholder="Email" required>
+            <div class="contact__form-row">
+              <input type="text" name="name" class="contact__input" placeholder="Name" required>
+              <input type="email" name="email" class="contact__input" placeholder="Email" required>
+            </div>
             <input type="text" name="subject" class="contact__input" placeholder="Subject" required>
             <textarea name="message" class="contact__textarea" placeholder="Message" rows="5" required></textarea>
             <button type="submit" class="contact__submit">Send Message</button>
@@ -369,44 +284,10 @@
     </div>
   </section>
 
-  <!-- Footer — FOOT-01 through FOOT-06 -->
+  <!-- Footer -->
   <footer class="footer" id="footer">
     <div class="footer__container container">
-      <div class="footer__grid">
-        <div class="footer__column">
-          <h3 class="footer__title">Quick Links</h3>
-          <ul class="footer__list">
-            <li><a href="#about" class="footer__link">About</a></li>
-            <li><a href="#products" class="footer__link">Product</a></li>
-            <li><a href="#campaign" class="footer__link">Campaigns</a></li>
-            <li><a href="#contact" class="footer__link">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h3 class="footer__title">Campaigns</h3>
-          <ul class="footer__list">
-            <li><a href="#" class="footer__link">Intake Paris</a></li>
-            <li><a href="#" class="footer__link">Intake Lux</a></li>
-            <li><a href="#" class="footer__link">Intake MVP</a></li>
-            <li><a href="#" class="footer__link">Intake Rescue</a></li>
-            <li><a href="#" class="footer__link">Intake 360</a></li>
-            <li><a href="#" class="footer__link">Intake Electric</a></li>
-          </ul>
-        </div>
-        <div class="footer__column footer__column--newsletter">
-          <h3 class="footer__title">Newsletter</h3>
-          <p class="footer__text">Stay updated with new flavors, campaigns, and the InTake lifestyle.</p>
-          <form class="footer__newsletter" id="newsletter-form" action="https://formspree.io/f/xnewsletter" method="POST">
-            <input type="email" name="email" class="footer__newsletter-input" placeholder="Your email" required>
-            <button type="submit" class="footer__newsletter-btn">Subscribe</button>
-          </form>
-          <p class="footer__newsletter-status" id="newsletter-status"></p>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__copyright">The Worlds Brand &amp; InTake Global. Copyright &copy; 2026. All rights reserved.</p>
-        <p class="footer__tagline">Fuel from within, intake the energy that reflects you</p>
-      </div>
+      <p class="footer__copyright">The Worlds Brand &amp; InTake Global. Copyright &copy; 2026. All rights reserved.</p>
     </div>
   </footer>
 
